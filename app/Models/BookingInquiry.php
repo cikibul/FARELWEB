@@ -9,6 +9,8 @@ class BookingInquiry extends Model
 {
     use HasFactory;
 
+    protected $table = 'bookings_inquiries';
+
     protected $fillable = [
         'customer_name', 'phone_number', 'booking_type',
         'item_id', 'booking_date', 'notes', 'status',
